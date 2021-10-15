@@ -1,0 +1,48 @@
+body {
+  font-size: 20px;
+
+  background-color: #efefef;
+}
+
+body::after {
+  content: '';
+
+  width: 40%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.header {
+  width: 100%;
+}
+
+.navbar {
+  height: 80px;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 100%;
+}
+
+.navbar__list__item {
+  text-decoration: none;
+
+  color: #000;
+}
+
+.container-fluid {
+  max-width: 768px;
+
+  margin: 0 auto;
+}
+
+.section {
+  margin-top: 40px;
+}
