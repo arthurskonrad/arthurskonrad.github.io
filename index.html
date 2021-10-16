@@ -1,68 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="./reset.css">
-  <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./slider.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
-  <title>Arthur</title>
-</head>
-<body>
-  <header class="header">
-    <nav class="navbar">
-      <ul class="navbar__list container-fluid">
-        <li>
-          <a href="#about" class="navbar__list__item">
-            About me
-          </a>
-        </li>
+    <title>Arthur</title>
+  </head>
+  <body class="min-h-screen bg-gray-100 text-gray-900 ">
+    <section id="home" class="h-screen bg-pink-200 px-8 sm:px-20 lg:px-32 py-20 sm:py-32">
+      <header class="p-8 sm:p-12 bg-pink-500 shadow-lg rounded-lg text-white text-lg md:text-2xl">
+        <nav>
+          <ul class="flex flex-col sm:flex-row justify-around text-center">
+            <li class="flex-1">
+              <a href="#about">
+                About me
+              </a>
+            </li>
 
-        <li>
-          <a href="#developer" class="navbar__list__item">
-            Developer
-          </a>
-        </li>
+            <li class="flex-1">
+              <a href="#developer">
+                Developer
+              </a>
+            </li>
 
-        <li>
-          <a href="#painter" class="navbar__list__item">
-            Painter
-          </a>
-        </li>
+            <li class="flex-1">
+              <a href="#painter">
+                Painter
+              </a>
+            </li>
 
-        <li>
-          <a href="#find" class="navbar__list__item">
-            Find me
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+            <li class="flex-1">
+              <a href="#find">
+                Find me
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </section>
 
-  <section id="about" class="section">
-    <div class="container-fluid">
-      <h1>About</h1>
-    </div>
-  </section>
+    <section id="about" class="px-8 sm:px-20 lg:px-32 py-8 sm:py-12 mb-12">
+      <div class="flex flex-col-reverse md:flex-row align-center justify-around">
+        <div data-slider class="flex justify-center align-center">
+          <div class="mt-12 md:mt-0 h-60 w-60 bg-pink-400 relative shadow-lg">
+            <div class="flex slider__images__container">
+              <img class="h-full w-full" src="./assets/me/arthur.png" alt="">
+            </div>
+            <button
+              data-slider-left
+              class="
+                absolute bottom-2/4 left-4
+                transform translate-y-2/4 cursor-pointer bg-pink-600 h-8 w-8
+                flex align-center justify-center
+                rounded-full font-black text-white shadow-md
+                hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-900 focus:ring-opacity-50
+              "
+            >
+              <span class="mt-0.5">&lt;</span>
+            </button>
 
-  <section id="developer" class="section">
-    <div class="container-fluid">
-      <h1>Developer</h1>
-    </div>
-  </section>
+            <button
+              data-slider-right
+              class="
+                absolute bottom-2/4 right-4
+                transform translate-y-2/4 cursor-pointer bg-pink-600 h-8 w-8
+                flex align-center justify-center
+                rounded-full font-black text-white shadow-md
+                hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-900 focus:ring-opacity-50
+              "
+            >
+              <span class="mt-0.5">&gt;</span>
+            </button>
+          </div>
+        </div>
 
-  <section id="painter" class="section">
-    <div class="container-fluid">
-      <h1>Painter</h1>
-    </div>
-  </section>
+        <div class="p-2 sm:p-12">
+          <h1 class="text-2xl mb-8">About me</h1>
 
-  <section id="find" class="section">
-    <div class="container-fluid">
-      <h1>Find me</h1>
-    </div>
-  </section>
-</body>
+          <div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="developer" class="px-8 sm:px-20 lg:px-32 py-8 sm:py-12 mb-12">
+      <div class="flex flex-col md:flex-row align-center justify-around">
+        <div class="p-2 sm:p-12">
+          <h1 class="text-2xl mb-8">Developer</h1>
+
+          <div>
+          </div>
+        </div>
+
+        <div data-slider class="flex justify-center align-center">
+          <div class="mt-12 md:mt-0 h-60 w-60 bg-pink-400 relative shadow-lg">
+            <div class="flex slider__images__container">
+              <img class="h-full w-full" src="./assets/developer/javascript.png" alt="">
+              <img class="h-full w-full" src="./assets/developer/css.png" alt="">
+              <img class="h-full w-full" src="./assets/developer/html.png" alt="">
+              <img class="h-full w-full" src="./assets/developer/react.png" alt="">
+            </div>
+
+            <button
+              data-slider-left
+              class="
+                absolute bottom-2/4 left-4
+                transform translate-y-2/4 cursor-pointer bg-pink-600 h-8 w-8
+                flex align-center justify-center
+                rounded-full font-black text-white shadow-md
+                hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-900 focus:ring-opacity-50
+              "
+            >
+              <span class="mt-0.5">&lt;</span>
+            </button>
+
+            <button
+              data-slider-right
+              class="
+                absolute bottom-2/4 right-4
+                transform translate-y-2/4 cursor-pointer bg-pink-600 h-8 w-8
+                flex align-center justify-center
+                rounded-full font-black text-white shadow-md
+                hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-900 focus:ring-opacity-50
+              "
+            >
+              <span class="mt-0.5">&gt;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="painter" class="px-8 sm:px-20 lg:px-32 py-8 sm:py-12 mb-12">
+      <div class="flex flex-col-reverse md:flex-row align-center justify-around">
+        <div data-slider class="flex justify-center align-center">
+          <div class="mt-12 md:mt-0 h-60 w-60 bg-pink-400 relative shadow-lg">
+            <div class="flex slider__images__container">
+              <img class="h-full w-full" src="./assets/painter/tuio.png" alt="">
+              <img class="h-full w-full" src="./assets/painter/familia.png" alt="">
+              <img class="h-full w-full" src="./assets/painter/bruno.png" alt="">
+            </div>
+
+            <button
+              data-slider-left
+              class="
+                absolute bottom-2/4 left-4
+                transform translate-y-2/4 cursor-pointer bg-pink-600 h-8 w-8
+                flex align-center justify-center
+                rounded-full font-black text-white shadow-md
+                hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-900 focus:ring-opacity-50
+              "
+            >
+              <span class="mt-0.5">&lt;</span>
+            </button>
+
+            <button
+              data-slider-right
+              class="
+                absolute bottom-2/4 right-4
+                transform translate-y-2/4 cursor-pointer bg-pink-600 h-8 w-8
+                flex align-center justify-center
+                rounded-full font-black text-white shadow-md
+                hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-900 focus:ring-opacity-50
+              "
+            >
+              <span class="mt-0.5">&gt;</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="p-2 sm:p-12">
+          <h1 class="text-2xl mb-8">Painter</h1>
+
+          <div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="find" class="px-8 sm:px-20 lg:px-32 py-8 sm:py-12 bg-pink-600 text-white mt-12">
+      <div class="">
+        <h1 class="text-2xl mb-8">Find me</h1>
+
+        <nav>
+          <ul>
+            <li>@arthurskonrad</li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <script src="./slider.js"></script>
+  </body>
 </html>
