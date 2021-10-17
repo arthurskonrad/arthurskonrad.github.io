@@ -1,0 +1,26 @@
+{
+  "name": "arthurskonrad.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.html",
+  "scripts": {
+    "build": "./node_modules/.bin/postcss ./src/styles/main.css -o ./build/compiled.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurskonrad/arthurskonrad.github.io.git"
+  },
+  "author": "Arthur Schulle Konrad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arthurskonrad/arthurskonrad.github.io/issues"
+  },
+  "homepage": "https://github.com/arthurskonrad/arthurskonrad.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1",
+    "tailwindcss": "^2.2.17"
+  }
+}
