@@ -1,4 +1,4 @@
-const anchor = document.querySelectorAll('a');
+const anchor = document.querySelectorAll('[data-anchor]');
 
 const scroll = function (event) {
   event.preventDefault();
