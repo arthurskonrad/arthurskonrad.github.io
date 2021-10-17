@@ -1,6 +1,6 @@
 const goToTop = document.querySelector('#goToTop')
 
-const callback = function ([entry]) {
+const callback = ([entry]) => {
   if (entry.isIntersecting) {
     goToTop.classList.add('hidden');
   } else {
