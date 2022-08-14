@@ -13,17 +13,18 @@
 
     <title>Arthur</title>
   </head>
-  <body class="min-h-screen bg-pink-50  text-gray-900 relative">
+  <body class="min-h-screen bg-gray-100 text-gray-900 relative font-mono">
     <div id="top"></div>
 
-    <section id="home" class="min-h-screen bg-gray-500 px-4 py-4 sm:py-8 md:py-16 relative">
+    <section id="home" class="min-h-screen bg-gray-100 px-4 py-4 sm:py-8 md:py-16 relative">
       <header
         id="header"
         class="
           absolute right-12 bottom-20 sm:static
-          p-8 sm:p-12 bg-gray-700 shadow-lg
+          p-8 sm:p-12 shadow-lg
           rounded-lg text-white text-lg
           md:text-2xl max-w-3xl m-auto
+          bg-gradient-to-r from-pink-500 via-pink-400 to-pink-300
         "
       >
         <nav>
@@ -220,7 +221,13 @@
       </div>
     </section>
 
-    <section id="find" class="px-4 py-4 sm:py-12 bg-gray-700 text-white mt-12">
+    <section
+      id="find"
+      class="
+        px-4 py-4 sm:py-12 text-white mt-12
+        bg-gradient-to-r from-pink-500 via-pink-400 to-pink-300
+      "
+    >
       <div class="max-w-3xl m-auto">
         <nav>
           <ul class="flex flex-col md:flex-row justify-between">
@@ -258,6 +265,7 @@
           bg-pink-500 hover:bg-pink-700
           focus:outline-none focus:ring-2
           focus:ring-pink-600 focus:ring-opacity-50
+          bg-gradient-to-r from-pink-500 via-pink-400 to-pink-300
         "
         data-anchor
       >
