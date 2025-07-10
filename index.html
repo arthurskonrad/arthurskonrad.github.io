@@ -5,25 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Arthur | Software Engineer</title>
   <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      max-width: 480px;
+      margin: auto;
+      box-sizing: border-box;
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    div {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 0.5em;
+    }
+
+    .subtitle {
+      font-size: 36px;
+      color: #666;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  </style>
 </head>
-<body id="home">
-
-  <header class="header">
-    <nav class="navbar">
-      <div class="menu-toggle" id="menu-toggle">🧭</div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#professional-summary">Professional summary</a></li>
-        <li><a href="#core-competencies">Core competencies</a></li>
-        <li><a href="#experiences">Experiences</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div class="hero-content">
+<body>
+  <section>
+    <div>
       <h1>
-        Arthur<br />
+        Arthur Schulle Konrad<br />
         <span class="subtitle">Software Engineer</span>
       </h1>
       <p>
@@ -32,141 +58,5 @@
       </p>
     </div>
   </section>
-
-  <section id="professional-summary" class="section">
-    <div class="section-content">
-      <h2>Professional Summary</h2>
-      <p>
-        Results-driven Frontend Software Engineer with over <strong>seven years of experience</strong> specializing in
-        <strong>JavaScript</strong>, <strong>TypeScript</strong>, and <strong>React</strong>.
-      </p>
-      <p>
-        Demonstrated expertise in developing and maintaining web applications, with additional experience in backend
-        technologies like Node.js and MVC frameworks (PHP, Laravel, Ruby on Rails).
-      </p>
-      <p>
-        Recognized for strong collaboration, communication, and problem-solving skills gained through teamwork and pair
-        programming.
-      </p>
-      <p>
-        Passionate about continuous learning and delivering user-centric solutions. Self-learner dedicated to expanding
-        technical knowledge and improving skills independently.
-      </p>
-    </div>
-  </section>
-
-  <section id="core-competencies" class="section">
-    <div class="section-content">
-      <h2>Core Competencies</h2>
-
-      <div class="features-grid">
-        <div class="feature">
-          <div class="emoji-icon">🖥️</div>
-          <h3>Frontend Development</h3>
-          <p>React, JavaScript, TypeScript, HTML, CSS, Jest, React Testing Library, Cypress</p>
-        </div>
-
-        <div class="feature">
-          <div class="emoji-icon">🧩</div>
-          <h3>Backend & MVC Frameworks</h3>
-          <p>Node.js, PHP (Laravel), Ruby on Rails</p>
-        </div>
-
-        <div class="feature">
-          <div class="emoji-icon">⚙️</div>
-          <h3>Tools & Technologies</h3>
-          <p>Docker, Git, Agile Methodologies</p>
-        </div>
-
-        <div class="feature">
-          <div class="emoji-icon">😊</div>
-          <h3>Soft Skills</h3>
-          <p>Effective Communication, Team Collaboration, Problem-Solving, Adaptability</p>
-        </div>
-
-        <div class="feature">
-          <div class="emoji-icon">✅</div>
-          <h3>Testing & Quality Assurance</h3>
-          <p>Unit Testing, Integration Testing, E2E Testing</p>
-        </div>
-
-        <div class="feature">
-          <div class="emoji-icon">❤️</div>
-          <h3>Mentorship</h3>
-          <p>Guiding and supporting new developers in professional growth</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="experiences" class="section tall-section">
-    <div class="section-content">
-      <h2>Experiences</h2>
-
-      <div class="experience">
-        <div class="experience-logo">
-          <img src="public/leroy_merlin_logo.jpg" alt="Leroy Merlin logo" />
-          <span class="experience-date">2022 to present</span>
-        </div>
-        <ul class="experience-list">
-          <li>Develop and maintain e-commerce order management pages, ensuring optimal user experience and performance.</li>
-          <li>Lead frontend visual refactoring and implement continuous improvements to align with modern design practices.</li>
-          <li>Collaborate across multiple squads (Checkout, Catalog, Platform, SEO, Search) to deliver high-quality features and gain exposure to diverse business challenges.</li>
-          <li>Foster effective communication and comprehension skills through leadership roles and cross-functional teamwork.</li>
-          <li>Actively participate in a project focused on helping neurodivergent individuals integrate into the job market, serving as a buddy to provide support and mentorship.</li>
-        </ul>
-      </div>
-
-      <hr />
-
-      <div class="experience">
-        <div class="experience-logo">
-          <img src="public/87labs_logo.png" alt="87Labs logo" />
-          <span class="experience-date">2017 to 2022</span>
-        </div>
-        <ul class="experience-list">
-          <li>Delivered frontend solutions using React, JavaScript, HTML and CSS across various client projects.</li>
-          <li>Gained proficiency in backend technologies like Ruby on Rails, Golang, Elixir (Phoenix), and PHP (Laravel).</li>
-          <li>Utilized Docker for containerization, ensuring consistency and efficiency across development environments.</li>
-          <li>Quickly adapted to new technologies and frameworks, demonstrating versatility and eagerness to learn.</li>
-        </ul>
-      </div>
-
-      <hr />
-
-      <div class="experience">
-        <div class="experience-logo">
-          <img src="public/DigitalDesk_logo.jpg" alt="DigitalDesk logo" />
-          <span class="experience-date">2017</span>
-        </div>
-        <ul class="experience-list">
-          <li>Created and maintained landing pages and internal tools using HTML, CSS, JavaScript, and jQuery.</li>
-          <li>Contributed to improving UI/UX designs, ensuring responsive and user-friendly web interfaces.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <div class="section-content">
-      <h2>Contact me</h2>
-      <ul class="contact-list">
-        <li>
-          <a href="https://www.linkedin.com/in/arthurskonrad/" target="_blank" rel="noreferrer">
-            🔗 Linkedin
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/arthurskonrad/" target="_blank" rel="noreferrer">
-            💻 Github
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <a href="#home" class="back-to-top">🆙</a>
-
-  <script src="script.js"></script>
 </body>
 </html>
