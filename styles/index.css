@@ -29,8 +29,6 @@ body {
 .hero {
     width: 100%;
     max-width: 720px;
-    transform: translateY(12px);
-    animation: heroFade 700ms ease forwards;
 }
 
 .avatar {
