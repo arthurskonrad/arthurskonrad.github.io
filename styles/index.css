@@ -66,17 +66,17 @@ h1::selection {
 .role {
     margin-top: 6px;
     color: var(--muted);
+    margin-bottom: 24px;
 }
 
 .bio {
-    margin-top: 28px;
     line-height: 1.8;
     max-width: 60ch;
     font-size: 1.08rem;
 }
 
 .links {
-    margin-top: 12px;
+    margin-top: 24px;
 }
 
 .links a {
@@ -109,7 +109,7 @@ h1::selection {
 }
 
 .footer {
-    margin-top: 18px;
+    margin-top: 24px;
     color: var(--muted);
     font-size: 0.9rem;
 }
